@@ -1,8 +1,21 @@
-// import functions
 
-// grab DOM elements
+const audio = document.getElementById('audio');
 
-// set event listeners 
-    // get user input
-    // use user input to update state 
-    // update DOM to reflect the new state
+const ninjaSound = document.getElementById('ninja-sound');
+ninjaSound.addEventListener('click', () => {
+    audio.src = 'assets/sounds/ninja.mp3';
+    audio.play();
+});
+
+const princessSound = document.getElementById('princess-sound');
+princessSound.addEventListener('click', () => {
+    audio.src = 'assets/sounds/princess.mp3';
+    audio.play();
+});
+
+const rangerSound = document.getElementById('ranger-sound');
+rangerSound.addEventListener('click', () => {
+    audio.src = 'assets/sounds/ranger.mp3';
+    audio.play();
+});
+
